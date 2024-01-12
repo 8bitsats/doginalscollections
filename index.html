@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordinals Metadata Composer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Ordinals Metadata Composer</h1>
+  <form id="metadataForm">
+    <div class="form-section">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div class="form-section">
+      <label for="slug">Slug</label>
+      <input type="text" id="slug" name="slug">
+      <label for="supply">Supply</label>
+      <input type="text" id="supply" name="supply">
+    </div>
+    <div class="form-section">
+      <label for="description">Description</label>
+      <textarea id="description" name="description"></textarea>
+    </div>
+    <div class="form-section">
+      <label for="inscriptionIcon">Inscription Icon</label>
+      <input type="text" id="inscriptionIcon" name="inscriptionIcon">
+    </div>
+    <div class="form-section">
+      <label for="twitterLink">Twitter Link</label>
+      <input type="text" id="twitterLink" name="twitterLink">
+      <label for="discordLink">Discord Link</label>
+      <input type="text" id="discordLink" name="discordLink">
+      <label for="websiteLink">Website Link</label>
+      <input type="text" id="websiteLink" name="websiteLink">
+    </div>
+    <div id="inscriptionsSection">
+      <label>Inscriptions</label>
+      <button type="button" onclick="addInscription()">Add new inscription</button>
+    </div>
+    <div class="form-section">
+      <button type="button" onclick="generateJSON()">Download file</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
